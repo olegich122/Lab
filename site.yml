@@ -1,0 +1,7 @@
+- name: Install tomcat and nginx 
+  hosts: tomcat-server
+  remote_user: ubuntu 
+  become: true
+  roles:
+    - tomcat
+#    - nginx
